@@ -1,9 +1,9 @@
-import { ChatServer } from './ChatServer'
+import { ChatServer } from './chat-server'
+import { Routes } from './routes/routes'
 
 const app = new ChatServer().getApp()
+const route = new Routes(app)
 
-app.get('/', (req, res) => {
-  res.send('Hello old friend')
-})
+route.getRoutes()
 
 export { app }
