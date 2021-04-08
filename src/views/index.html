@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" media="screen" charset="utf-8" />
     <title>Chat Server</title>
   </head>
   <body>
-    <h1>Hello there world!!</h1>
+    <div class="container">
+      <video class="video-large" autoplay></video>
+      <div class="users-container" id="users-container">
+        <h4>Users</h4>
+        <div id="users"></div>
+      </div>
+    </div>
+
+    <script src="/socket.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
   </body>
 </html>
