@@ -1,11 +1,9 @@
-import * as express from 'express'
+import { ChatServer } from './ChatServer'
 
-const app = express()
+const app = new ChatServer().getApp()
 
 app.get('/', (req, res) => {
-  res.send('Hello there world')
+  res.send('Hello old friend')
 })
 
-app.listen(5000, () => {
-  console.log('Server is running on port 5000')
-})
+export { app }
